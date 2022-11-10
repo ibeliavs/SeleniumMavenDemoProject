@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UI Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="UI">
+        <classes>
+            <class name="ui.FramesAlertHandle">
+                <methods>
+                    <include name="testBaseAlert"/>
+                    <include name="testPromptAlert"/>
+                    <include name="testConfirmAlert"/>
+                    <include name="testWindows"/>
+                    <include name="handlingWindows"/>
+                    <include name="handlingFrames"/>
+                    <include name="windowsSwitchingTest"/>
+                    <include name="softAssertTesting"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="Groups">
+        <classes>
+            <class name="ui.GroupsDemo">
+                <methods>
+                    <include name="testRegression3"/>
+                    <include name="testRegression4"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

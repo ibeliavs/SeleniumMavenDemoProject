@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Reading Browser details from testng xml">
+    <test verbose="2" preserve-order="true" name="Reading Browser details from testng xml">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="appURL" value="https://www.google.com/"></parameter>
+        <classes>
+            <class name="testcases.com.company.example.LoginTestReadFromTestNGXML"/>
+        </classes>
+    </test>
+</suite>

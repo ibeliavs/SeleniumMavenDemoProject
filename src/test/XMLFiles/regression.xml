@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <test verbose="2" preserve-order="true"
+          name="Regressions">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="ui.GroupsDemo">
+                <methods>
+                    <include name="testRegression1"/>
+                    <include name="testRegression2"/>
+                    <include name="testRegression3"/>
+                    <include name="testRegression4"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

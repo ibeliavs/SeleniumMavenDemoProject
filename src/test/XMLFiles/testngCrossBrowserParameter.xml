@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <test verbose="2" preserve-order="true"
+          name="Testing chrome browser">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="ui.LocatorsElements">
+                <methods>
+                    <include name="assertTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="Testing firefox browser">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="ui.LocatorsElements">
+                <methods>
+                    <include name="assertTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="Testing edge browser">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="ui.LocatorsElements">
+                <methods>
+                    <include name="assertTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
