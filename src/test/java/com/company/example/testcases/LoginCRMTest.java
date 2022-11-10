@@ -24,6 +24,5 @@ public class LoginCRMTest extends BaseClass {
         loginPage.loginToPage(excel.getStringData("Login", 0, 0),
                               excel.getStringData(0, 0, 1));
         testLogger.pass("Login Success");
-        //testLogger.fail("Login Fail");
     }
 }

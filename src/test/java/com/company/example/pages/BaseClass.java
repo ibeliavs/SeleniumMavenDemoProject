@@ -53,6 +53,7 @@ public class BaseClass {
     public void tearDown(){
         driver.quit();
     }
+
     //After each test we check result from interface ITestResult
     @AfterMethod
     public void tearDown(ITestResult result)
