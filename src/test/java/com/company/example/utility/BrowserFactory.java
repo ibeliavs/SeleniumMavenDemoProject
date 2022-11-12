@@ -26,7 +26,7 @@ public class BrowserFactory {
         }
 
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
         driver.get(appURL);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 

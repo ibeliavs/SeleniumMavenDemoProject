@@ -110,11 +110,14 @@
                 <version>3.0.0-M7</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${fileName}</suiteXmlFile>
+                        <suiteXmlFile>src/test/XMLFiles/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-               <!-- <systemPropertyVariables>
+                    <!--<suiteXmlFiles>
+                        <suiteXmlFile>XMLFiles/${fileName}</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <systemPropertyVariables>
                         <executionBrowser>${browser}</executionBrowser>
-                     <appURL>${url}</appURL>
+                        <appURL>${url}</appURL>
                     </systemPropertyVariables>
 
   Calling from command line mvn clean test -Dbrowser=chrome -Durl=http://freecrm.com/ -DfileName=testng.xml

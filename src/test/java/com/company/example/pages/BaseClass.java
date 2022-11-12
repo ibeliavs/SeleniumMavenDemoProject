@@ -39,10 +39,10 @@ public class BaseClass {
     }
 //    @Parameters({"browser", "url"})
 //    @BeforeClass
-//    public void setUp(String browser, url){
+//    public void setUp(String browser, String url){
 //    System.out.println("Browser from maven pom.xml file");
 //    driver = BrowserFactory.startApplication(browser, url);
-//}
+
 
     @BeforeClass
     public void setUp(){
