@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Listener Test Suite">
     <listeners>
-        <listener class-name="ui.TestNGListener"></listener>
+        <listener class-name="com.selenium.basic.examples.TestNGListener"></listener>
     </listeners>
     <test verbose="2" preserve-order="true" name="Using Listener">
         <classes>
-            <class name="ui.ListenerDemoTest"/>
+            <class name="com.selenium.basic.examples.ListenerDemoTest"/>
         </classes>
     </test>
 </suite>

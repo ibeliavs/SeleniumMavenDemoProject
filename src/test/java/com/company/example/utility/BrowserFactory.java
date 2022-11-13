@@ -25,10 +25,11 @@ public class BrowserFactory {
             System.out.println("We do not support this browser");
         }
 
+        driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-        //driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(appURL);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
         return driver;
     }

@@ -5,7 +5,7 @@
           name="Testing chrome browser">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="ui.LocatorsElements">
+            <class name="com.selenium.basic.examples.LocatorsElements">
                 <methods>
                     <include name="assertTest"/>
                 </methods>
@@ -16,7 +16,7 @@
           name="Testing firefox browser">
         <parameter name="browser" value="firefox"></parameter>
         <classes>
-            <class name="ui.LocatorsElements">
+            <class name="com.selenium.basic.examples.LocatorsElements">
                 <methods>
                     <include name="assertTest"/>
                 </methods>
@@ -27,7 +27,7 @@
           name="Testing edge browser">
         <parameter name="browser" value="edge"></parameter>
         <classes>
-            <class name="ui.LocatorsElements">
+            <class name="com.selenium.basic.examples.LocatorsElements">
                 <methods>
                     <include name="assertTest"/>
                 </methods>

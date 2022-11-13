@@ -5,7 +5,7 @@
           name="Reading browser details from testng.xml file">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="ui.TestNGDataDrivenDemo"></class>
+            <class name="com.selenium.basic.examples.TestNGDataDrivenDemo"></class>
         </classes>
     </test>
 </suite>
