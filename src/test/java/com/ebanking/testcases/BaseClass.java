@@ -24,7 +24,6 @@ public class BaseClass {
     public static WebDriver driver;
     public static Logger log = LogManager.getLogger(BaseClass.class);
     public ReadConfig config = new ReadConfig();
-
     public String username = config.getUserName();
     public String password = config.getPassword();
     private String baseURL = config.getApplicationURL();

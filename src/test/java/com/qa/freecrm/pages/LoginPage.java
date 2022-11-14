@@ -7,20 +7,21 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends TestBase {
+    // initialize page objects
+    public LoginPage(){
+         PageFactory.initElements(driver, this);
+    }
 
     //Page Factory - OR object Repository
     @FindBy(name = "email")
     @CacheLookup
     private WebElement email;
-
     @FindBy (name = "password")
     @CacheLookup
     private WebElement password;
-
     @FindBy (xpath = "//div[text()='Login']")
     @CacheLookup
     private WebElement loginBtn;
-
     @FindBy (linkText = "Login")
     @CacheLookup
     private WebElement loginLink;
@@ -28,11 +29,6 @@ public class LoginPage extends TestBase {
     @FindBy(linkText="Sign Up")
     @CacheLookup
     private WebElement signBtn;
-
-    // initialize page objects
-    public LoginPage(){
-        PageFactory.initElements(driver, this);
-    }
 
     //Defining page action
     public String validateLoginPageTitle(){
