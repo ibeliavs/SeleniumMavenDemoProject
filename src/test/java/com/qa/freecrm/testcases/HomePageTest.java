@@ -31,19 +31,16 @@ public class HomePageTest extends TestBase {
     }
 
     @Test(priority=3)
-    public void navigateToContactsPageTest(){
+    public void verifyContactsLinkTest(){
         ContactsPage contactsPage = homePage.clickOnContactLink();
         String contactsPageTitle = contactsPage.verifyContactsPageTitle();
         Assert.assertEquals(contactsPageTitle, "Contacts");
-        System.out.println(contactsPageTitle);
     }
 
     @Test(priority=4)
-    public void navigateToDealsPage(){
+    public void verifyDealsLinkTest(){
         DealsPage dealsPage = homePage.clickOnDealsLink();
         String dealsPageTitle = dealsPage.verifyDealsPage();
         Assert.assertEquals(dealsPageTitle, "Deals");
-        System.out.println(dealsPageTitle);
     }
-
 }

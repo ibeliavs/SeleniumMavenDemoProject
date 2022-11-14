@@ -1,2 +1,6 @@
 # Project exclude paths
 /target/
+/test-output/
+/src/test/resources/reports/
+/src/test/resources/screenshots/
+/src/test/resources/logs/
