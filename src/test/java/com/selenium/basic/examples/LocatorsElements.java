@@ -66,6 +66,10 @@ public class LocatorsElements {
         System.out.println(loginButton.getAttribute("class"));
         System.out.println(loginButton.getCssValue("color"));
 
+
+        //get value from active element
+        String value = driver.switchTo().activeElement().getAttribute("value");
+
         // Hard assertion
         Assert.assertTrue(loginButton.isDisplayed());
         Assert.assertTrue(loginButton.isEnabled(), "This text will be displayed in failed case.");

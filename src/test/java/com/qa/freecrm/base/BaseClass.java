@@ -11,7 +11,7 @@ import org.testng.annotations.AfterMethod;
 
 import java.time.Duration;
 
-public class TestBase {
+public class BaseClass {
     public static WebDriver driver;
     public static ReadConfig config = new ReadConfig();
 

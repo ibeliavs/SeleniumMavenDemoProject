@@ -1,11 +1,11 @@
 package com.qa.freecrm.pages;
 
-import com.qa.freecrm.base.TestBase;
+import com.qa.freecrm.base.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage extends TestBase {
+public class HomePage extends BaseClass {
     public HomePage(){
         PageFactory.initElements(driver, this);
     }

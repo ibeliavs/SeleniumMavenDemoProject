@@ -24,7 +24,6 @@ import static org.testng.Assert.assertEquals;
 
 public class FramesAlertHandle {
     private WebDriver driver;
-    private WebElement element;
 
     @BeforeTest
     public void setupTest() {

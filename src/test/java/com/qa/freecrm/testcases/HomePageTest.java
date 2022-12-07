@@ -1,6 +1,6 @@
 package com.qa.freecrm.testcases;
 
-import com.qa.freecrm.base.TestBase;
+import com.qa.freecrm.base.BaseClass;
 import com.qa.freecrm.pages.ContactsPage;
 import com.qa.freecrm.pages.DealsPage;
 import com.qa.freecrm.pages.HomePage;
@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class HomePageTest extends TestBase {
+public class HomePageTest extends BaseClass {
     LoginPage loginPage;
     HomePage homePage;
     @BeforeMethod

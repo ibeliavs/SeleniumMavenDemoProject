@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -12,8 +13,6 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import static org.junit.Assert.assertEquals;
 
 public class TableTest {
     private WebDriver driver;
@@ -42,21 +41,24 @@ public class TableTest {
                 break;
             }
         }
+
+        //another way
+        driver.findElement(By.xpath("//td[contains(text(), 'Man')]//following-sibling::td[2]//input")).click();
     }
 
     //Add all the prices and check if the total is correct
     @Test
     public void checkTotalInTable(){
         driver.get("https://letcode.in/table");
-        WebElement table = driver.findElement(By.cssSelector("table#shopping>tbody"));
-        List<WebElement> rows = table.findElements(By.tagName("tr"));
-
+        WebElement table = driver.findElement(By.xpath("//table[@id='shopping']//child::tbody"));
+        List<WebElement> tr = table.findElements(By.tagName("tr"));
         int sum = 0;
-        for (int i=0; i<rows.size(); i++){
-            sum += Integer.parseInt(rows.get(i).findElements(By.tagName("td")).get(1).getText());
+        for(WebElement el: tr){
+            sum+= Integer.parseInt(el.findElements(By.tagName("td")).get(1).getText());
         }
-        String total = table.findElement(By.xpath("//table[@id='shopping']/tfoot[1]/td[2]/b[1]")).getText();
-        assertEquals(sum, Integer.parseInt(total));
+
+        String total = table.findElement(By.xpath("//tfoot//b")).getText();
+        Assert.assertEquals(sum,Integer.parseInt(total));
     }
 
     @Test

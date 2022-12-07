@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true"
-          name="Login CRM">
+<suite name="Test Suite">
+    <test thread-count="2" parallel="methods" name="Test">
         <classes>
-            <class name="com.company.example.testcases.LoginCRMTest"/>
+            <class name="com.ilia.tests.LoginPageTests"></class>
+            <class name="com.ilia.tests.HomepageTests"></class>
         </classes>
     </test>
 </suite>
